@@ -1,38 +1,216 @@
-.App {
-  text-align: center;
+/* @import './Common.css'; */
+
+.f_logo{
+  float:left;
+  font-size:24px;
+  font-weight:500;
+  letter-spacing:-.92px;
+  color:#707070
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.f_body{
+  width:100%;
+  background-color:#f6f5f3;
+  padding:42px 0 50px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.f_bottom{
+  position:relative;
+  width:100%;
+  background-color:#ecebe7;
+  padding:16px 0;
+  z-index:5
+}
+.f_inner{
+  width:1240px;
+  margin:0 auto;
+  -webkit-transition:padding-left .2s ease-out 0s,padding-right .2s ease-out 0s,width .2s ease-out 0s;
+  transition:padding-left .2s ease-out 0s,padding-right .2s ease-out 0s,width .2s ease-out 0s
+}
+.f_inner:after{
+  content:"";
+  display:block;
+  clear:both
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.f_row:after{
+content:"";
+display:block;
+clear:both
 }
 
-.App-link {
-  color: #61dafb;
+
+.f_logo{
+float:left;
+font-size:24px;
+font-weight:500;
+letter-spacing:-.92px;
+color:#707070
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.f_menu{
+float:right
+}
+.f_menu:after{
+content:"";
+display:block;
+clear:both
+}
+
+.f_menulist{
+float:left
+}
+
+.f_menulist:not(:first-child){
+margin-left:106px
+}
+.f_menulist--link{
+width:100px;
+margin-left:83px
+}
+
+.f_menulist--link .f_menuanchor{
+width:100%;
+display:inline-block;
+position:relative
+}
+.f_menulist--link .f_menuanchor:before{
+content:"";
+width:16px;
+height:16px;
+position:absolute;
+right:0;
+top:50%;
+-webkit-transform:translateY(-50%);
+-ms-transform:translateY(-50%);
+transform:translateY(-50%);
+background:url(https://s3.ap-northeast-2.amazonaws.com/younglim-front-bucket/images/icon-footer-link.png) no-repeat;
+background-size:100% auto
+}
+.f_menuitem{
+font-size:16px;
+letter-spacing:-.23px;
+color:#707070;
+padding:8px 0
+}
+.f_menuitem:first-child{
+padding-top:0
+}
+
+.f_corporaterow{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-pack:justify;
+-webkit-justify-content:space-between;
+-ms-flex-pack:justify;
+justify-content:space-between;
+border-top:1px solid #ddd;
+margin-top:60px;
+padding-top:25px
+}
+
+.f_corporate:after{
+content:"";
+display:block;
+clear:both
+}
+
+.f_corporatename{
+font-size:16px;
+letter-spacing:-.3px;
+line-height:22px;
+color:#707070
+}
+
+.f_corporateinfo{
+font-size:14px;
+font-weight:300;
+letter-spacing:-.2px;
+line-height:20px;
+color:#707070;
+margin-top:10px
+}
+.f_corporateinfo:after{
+content:"";
+display:block;
+clear:both
+}
+.f_corporateinfo+.f_corporateinfo{
+margin-top:4px
+}
+.f_corporateinfoitem{
+float:left
+}
+.f_corporateinfoitem+.f_corporateinfoitem{
+margin-left:6px;
+padding-left:6px;
+position:relative
+}
+.f_corporateinfoitem+.f_corporateinfoitem:before{
+content:"";
+width:1px;
+height:10px;
+background-color:#ddd;
+position:absolute;
+left:0;
+top:50%;
+-webkit-transform:translateY(-50%);
+-ms-transform:translateY(-50%);
+transform:translateY(-50%)
+}
+.f_corporateinfoitem--block+.f_corporateinfoitem--block{
+  margin-left:0;
+  padding-left:0;
+  margin-top:4px
+}
+.f_corporateinfoitem--block+.f_corporateinfoitem--block:before{
+  content:none
+}
+
+.f_copy{
+float:left;
+font-size:14px;
+font-weight:500;
+letter-spacing:-.1px;
+color:rgba(51,51,51,.7);
+position:relative;
+padding-left:19px;
+line-height:18px;
+text-transform:uppercase
+}
+.f_copy:before{
+content:"";
+width:16px;
+height:16px;
+position:absolute;
+left:0;
+top:50%;
+-webkit-transform:translateY(-52%);
+-ms-transform:translateY(-52%);
+transform:translateY(-52%);
+background-image:url(https://s3.ap-northeast-2.amazonaws.com/younglim-front-bucket/images/icon-footer-copy.png);
+background-repeat:no-repeat;
+background-size:100% auto
+}
+
+.f_cs{
+float:right;
+margin-left:auto;
+font-size:14px;
+font-weight:500;
+letter-spacing:-.2px;
+color:#707070;
+line-height:18px;
+}
+
+
+.f_csnumber{
+margin-left:6px;
+font-size:15px;
+font-weight:500;
+letter-spacing:-.09px;
+line-height:18px
 }
