@@ -4,13 +4,17 @@ import './App.css';
 
 // JSX에서 class는 사용하지 않고 className을 사용한다
 // tabindex는 tabIndex로 사용한다.
+// function()은 ()=> 로 대체 가능
 
-function FooterMenu() {
+function FooterMenu(props) {
   return (
     <div className="f_menu">
       <ul className="f_menulist">
         <li className="f_menuitem">
-          <a href="/brand/madeInYounglim" className="f_menuanchor">브랜드</a>
+          <a href="/" onClick={(event) => {
+            event.preventDefault();
+            props.onChangeMode();
+          }} className="f_menuanchor">브랜드</a>
         </li>
         <li className="f_menuitem">
           <a href="/product/kitchen" className="f_menuanchor">제품</a>
@@ -138,7 +142,9 @@ function App() {
         <div className="f_inner">
           <div className="f_row">
             <div className="f_logo">영림 토탈 인테리어</div>
-            <FooterMenu />
+            <FooterMenu onChangeMode={function () {  //function()은 ()=> 로 대체 가능
+              alert('Header')
+            }} />
           </div>
           <FooterCorp />
         </div>
