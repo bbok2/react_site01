@@ -7,6 +7,8 @@ import './App.css';
 // function()은 ()=> 로 대체 가능
 // 이벤트를 가진 컴포넌트 만들기
 
+
+
 function FooterMenu(props) {
   return (
     <div className="f_menu">
