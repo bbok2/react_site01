@@ -14,7 +14,8 @@ function FooterMenu(props) {
           <a href="/" onClick={(event) => {
             event.preventDefault();
             props.onChangeMode();
-          }} className="f_menuanchor">브랜드</a>
+          }} 
+          className="f_menuanchor">브랜드</a>
         </li>
         <li className="f_menuitem">
           <a href="/product/kitchen" className="f_menuanchor">제품</a>
@@ -79,7 +80,7 @@ function FooterCorp() {
         <div className="f_corporateinfo">
           <div className="f_corporateinfoitem">대표. 김장원</div>
           <div className="f_corporateinfoitem">
-            사업자 등록번호. 137-81-02411
+            사업자 등록번호. 137-81-12345
           </div>
         </div>
         <div className="f_corporateinfo">
