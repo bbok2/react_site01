@@ -94,7 +94,7 @@ function App() {
         <div className="f_inner">
           <div className="f_row">
             <div className="f_logo">영림 토탈 인테리어</div>
-            <FooterMenu onChangeMode={function () {  //function()은 ()=> 로 대체 가능
+            <FooterMenu onChangeMode={() => {  //function()은 ()=> 로 대체 가능
               alert('Header')
             }} />
           </div>
